@@ -95,3 +95,13 @@ function createRandomCircle() {
 function getRandomNumber(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
+function winTheGame() {
+  function kill() {
+    const circle = document.querySelector(".circle");
+    if (circle) {
+      circle.click();
+    }
+  }
+
+  setInterval(kill, 75);
+}
